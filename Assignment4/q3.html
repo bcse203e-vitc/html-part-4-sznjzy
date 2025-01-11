@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="example@domain.com" required><br><br>
+        <label>Rate the Website:</label><br>
+        <input type="radio" name="rating" value="1" required>
+        <label>1</label><br>
+        <input type="radio" name="rating" value="2">
+        <label>2</label><br>
+        <input type="radio" name="rating" value="3">
+        <label>3</label><br>
+        <input type="radio" name="rating" value="4">
+        <label>4</label><br>
+        <input type="radio" name="rating" value="5">
+        <label>5</label><br><br>
+        <label>Type of Feedback:</label><br>
+        <select name="feedback-type" required>
+            <option value="">Select</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="bug-report">Bug Report</option>
+            <option value="compliment">Compliment</option>
+        </select><br><br>
+        <label>Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="50" required></textarea><br><br>
+        <label>Would you recommend us?</label><br>
+        <input type="radio" name="recommend" value="yes" required>
+        <label>Yes</label>
+        <input type="radio" name="recommend" value="no">
+        <label>No</label><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

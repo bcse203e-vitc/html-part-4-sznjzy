@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <label for="fullname">Fullname:</label><br>
+        <input type="text" name="fullname" required><br><br>
+        <label for="email" placeholder="example@domain.com">Email</label><br>
+        <input type="email" name="email" required><br><br>
+        <label for="gender">Gender:</label><br> 
+        <input type="radio" id="male" name="gender" value="male" required> 
+        <label for="male">Male</label><br> 
+        <input type="radio" id="female" name="gender" value="female" required> 
+        <label for="female">Female</label><br><br>
+        <label for="age">Age Group:</label>
+        <select name="age" required>
+            <option value="" disabled select>Select your age group</option>
+            <option value="under 18">Under 19</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55-64">55-64</option>
+            <option value="65 and above">65 and above</option>
+        </select><br><br>
+        <label>Interests:</label><br>
+         <input type="checkbox" id="sports" name="interests" value="sports"> 
+         <label for="sports">C++</label><br> 
+         <input type="checkbox" id="music" name="interests" value="music"> 
+         <label for="music">C</label><br> 
+         <input type="checkbox" id="reading" name="interests" value="reading"> 
+         <label for="reading">Python</label><br> 
+         <input type="checkbox" id="traveling" name="interests" value="traveling"> 
+         <label for="traveling">Java</label><br><br>
+        <label for="comments">Additional Comments:</label><br>
+        <input type="text" name="comments">
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

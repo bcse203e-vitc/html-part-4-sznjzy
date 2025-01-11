@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="/submit-booking" method="post">
+        <label>Full Name:</label><br>
+        <input type="text" name="full-name" placeholder="Your Full Name" required><br><br>
+
+        <label>Contact Information:</label><br>
+        <input type="email" name="contact-info" placeholder="Your Email" required><br><br>
+
+        <label>Destination:</label><br>
+        <select name="destination" required>
+            <option value="Chennai">Paris</option>
+            <option value="Mumbai">London</option>
+            <option value="Malaysia">New York</option>
+            <option value="Singapore">Tokyo</option>
+        </select><br><br>
+
+        <label>Travel Dates:</label><br>
+        <input type="date" name="travel-dates" required><br><br>
+
+        <label>Number of Travelers:</label><br>
+        <input type="number" name="num-travelers" min="1" required><br><br>
+
+        <label>Travel Class:</label><br>
+        <input type="radio" name="travel-class" value="Economy" required> Economy<br>
+        <input type="radio" name="travel-class" value="Business" required> Business<br>
+        <input type="radio" name="travel-class" value="First Class" required> First Class<br><br>
+
+        <label>Opt for Travel Insurance:</label>
+        <input type="checkbox" name="insurance"><br><br>
+
+        <label>Total Cost:</label><br>
+        <input type="text" name="total-cost"><br><br>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</body>
+</html>

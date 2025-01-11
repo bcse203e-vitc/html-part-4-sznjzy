@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+</head>
+<body>
+    <h1>Health Survey Form</h1>
+    <form action="/submit-survey" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="0" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female" required> Female<br>
+        <input type="radio" name="gender" value="Other" required> Other<br><br>
+
+        <label>Height (cm):</label><br>
+        <input type="number" name="height" required><br><br>
+
+        <label>Weight (kg):</label><br>
+        <input type="number" name="weight" required><br><br>
+
+        <label>Lifestyle Questions:</label><br>
+        <input type="checkbox" name="lifestyle" value="Smoking"> Smoking<br>
+        <input type="checkbox" name="lifestyle" value="Alcohol"> Alcohol<br>
+        <input type="checkbox" name="lifestyle" value="Regular Exercise"> Regular Exercise<br>
+        <input type="checkbox" name="lifestyle" value="Healthy Diet"> Healthy Diet<br><br>
+
+        <label>Dietary Preference:</label><br>
+        <select name="diet" required>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegetarian">Non-Vegetarian</option>
+        </select><br><br>
+
+        <label>Activity Level:</label><br>
+        <select name="activity" required>
+            <option value="Sedentary">Normal</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+        </select><br><br>
+
+        <label>Optional Health Concerns:</label><br>
+        <textarea name="health_concerns"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
