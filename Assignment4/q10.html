@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h1>Customizable Form Template</h1>
+    <form>
+        <div>
+            <label for="formName">Form Name:</label>
+            <input type="text" name="formName" required>
+        </div>
+        <div>
+            <label for="numFields">Number of Input Fields:</label>
+            <input type="number" name="numFields" required>
+        </div>
+
+        <div>
+            <h2>Input Fields</h2>
+            <div>
+                <label for="fieldType1">Field Type:</label>
+                <select name="fieldType1">
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                    <option value="number">Number</option>
+                    <option value="date">Date</option>
+                </select>
+                <label for="fieldLabel1">Field Label:</label>
+                <input type="text" name="fieldLabel1">
+            </div>
+            <div>
+                <label for="fieldType2">Field Type:</label>
+                <select name="fieldType2">
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                    <option value="number">Number</option>
+                    <option value="date">Date</option>
+                </select>
+                <label for="fieldLabel2">Field Label:</label>
+                <input type="text" name="fieldLabel2">
+            </div>
+            <!-- Repeat above block for more fields based on numFields input -->
+        </div>
+
+        <button type="submit">Generate Form</button>
+    </form>
+</body>
+</html>
