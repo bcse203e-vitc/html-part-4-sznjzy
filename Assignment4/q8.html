@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Submission Form</title>
+</head>
+<body>
+    <h1>Online Quiz Submission Form</h1>
+    <form action="/submit-quiz" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+        <fieldset>
+            <legend>Question 1:</legend>
+            <label>
+                <input type="radio" name="q1" value="A" required> Option A
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="B" required> Option B
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="C" required> Option C
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="D" required> Option D
+            </label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2:</legend>
+            <label>
+                <input type="checkbox" name="q2" value="A"> Option A
+            </label><br>
+            <label>
+                <input type="checkbox" name="q2" value="B"> Option B
+            </label><br>
+            <label>
+                <input type="checkbox" name="q2" value="C"> Option C
+            </label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3:</legend>
+            <label>
+                <input type="radio" name="q3" value="A" required> Option A
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="B" required> Option B
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="C" required> Option C
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="D" required> Option D
+            </label><br><br>
+        </fieldset>
+
+        <label>Time Remaining:</label><br>
+        <input type="text" value="Time Remaining: 10:00" readonly><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
